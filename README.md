@@ -1,2 +1,19 @@
-# ShopSave-updates
-ShopSave encrypted update packages and release information
+# ShopSave 更新
+
+公司內部使用的 ShopSave 商品圖影下載器更新入口。
+
+## 更新方式
+
+1. 第一次安裝，請向公司管理員取得完整安裝包，以 Chrome「載入未封裝項目」安裝。v1.4.0 以前的使用者須先手動升級一次。
+2. 在 ShopSave 側欄展開「版本與更新」，選擇 Chrome 目前載入的 ShopSave 安裝資料夾並允許寫入。
+3. 之後按「一鍵更新」，完成後重新整理商品頁。Chrome 可能再次要求資料夾寫入權限。
+
+更新期間請保持側欄開啟。若更新中斷，先按「恢復上次更新」再重試。新版增加權限時，請向管理員取得完整安裝包手動更新。
+
+## 下載附件
+
+[最新版本](https://github.com/Keith0512/ShopSave-updates/releases/latest) 的 `ShopSave-update.zip` 採 AES-256 加密，供插件自行下載與解密。密碼由公司管理員提供；管理員更換密碼後，可在插件「更新設定與手動處理」輸入並儲存。
+
+本倉庫只提供使用說明、已簽章的 `update.json` 與加密更新包。開發原始碼及未加密的首次安裝包不在此倉庫。ZIP 加密僅為基本存取門檻，不作為公司成員身分驗證。
+
+版本資訊固定位置：`main/update.json`。插件在套用前驗證版本簽章、附件雜湊、安裝資料夾及更新內容；失敗時不安裝，寫入失敗則嘗試恢復原版並保留必要的復原記錄。
