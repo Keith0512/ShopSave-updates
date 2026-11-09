@@ -1,0 +1,10 @@
+{
+  "payload": {
+    "schema": 1,
+    "version": "1.4.0",
+    "downloadUrl": "https://github.com/Keith0512/ShopSave-updates/releases/download/v1.4.0/ShopSave-update.zip",
+    "size": 1363898,
+    "sha256": "3f22f601ab3329a80fcfb095d9f1877abce2bd44766edf266f5f9904dc5b69e3"
+  },
+  "signature": "yjJCZotzN0ujEtSY62Nfd2TGrpP0BQgW1ICEdQrRvhPEPIRYQijwxiVXaRzFBPXfYf58iaUkx25nQnxhFT9vuA=="
+}
